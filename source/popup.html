@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            min-width:300px;
+            overflow-x:hidden;
+            font-family:Tahoma;
+            font-size:8pt;
+            font-weight:bold;
+            margin: 5px;
+            padding: 5px;
+            vertical-align:bottom;
+        }
+
+        .btn {
+            height: 15px;
+            width: 80px;
+            padding: 5px, 5px, 5px, 5px;
+            margin: 5px, 5px, 5px, 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        input {
+            font-family:Tahoma;
+            font-size:8pt;
+            border: 1px solid transparent;
+            border-bottom: 1px solid gray;
+        }
+
+        .div-flow {
+            float:left;
+        }
+        
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="jquery.js"></script>
+      <script src="jqueryui.js"></script>
+    <script src="setting.js"></script>
+    <script src="popup.js"></script>
+    
+  </head>
+  <body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><div class="div-flow">Which bangla font to use ?</div></td>
+                    <td><div class="div-flow">&nbsp;&nbsp;&nbsp;</div></td>
+                    <td><div class="div-flow"><input id="txtBanglaFont" value="SolaimanLipi"/></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  	<a href="#" id="lnkSave" class="btn">Save</a>
+  </body>
+</html>
